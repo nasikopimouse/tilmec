@@ -351,7 +351,7 @@ int binary_event_extractor_join (struct binary_event_extractor* chain,
 	{
 		(*(array+k))->next = (*(array+k+1));
 		(*(array+k+1))->prev = (*(array+k));
-		// printf ("debug audrey mana %s\n", (*(array+k+1))->usern);
+		// printf ("debug au**** mana %s\n", (*(array+k+1))->usern);
 	}
 	temp_head = array[0];
 	temp = temp_head;
