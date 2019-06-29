@@ -69,7 +69,7 @@ int att_sgc_ketemu(struct binary_event* binary_d)
 	data_val = binary_d->val;
 	if (data_kks == NULL || data_val == NULL)
 		return -1;
-	if (!strcmp (data_kks, ATT_RTPM_ATT_SIGNAL)
+	if (!strcmp (data_kks+2, ATT_RTPM_ATT_SIGNAL)
 		&& !strcmp (data_val, ATT_RTPM_ATT_SIGNAL_STATUS))
 		return 1;
 	return 0;
